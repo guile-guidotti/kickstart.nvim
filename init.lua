@@ -91,6 +91,9 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 vim.keymap.set('n', ';', ':', { desc = 'CMD enter command mode' })
+vim.keymap.set('n', ':', ';')
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
